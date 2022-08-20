@@ -28,7 +28,15 @@ fn2+ del/home   | brighthess up/down1   | brightnes
 fn2+ ins        | f20                   | mic
 power on+ esc   | reset                 | enter bootloader
 fn1+home        | end                   | end
-fn2+LCtl       | enter bootloader      | enter bootloader without poweroff
+fn2+LCtl        | enter bootloader      | enter bootloader without poweroff
+fn1+<->/<+>     | Lctl+<->/<+>          | For zoom in/out
 
 Changes in rgb:
-* turned Off all effects, except solid color 
+* Default setting - solid color
+* Default color - cyan(127)
+* Default brightness - 100
+* Default saturation - 255(max)
+
+Effects enablet in correct order:
+1. Solid color(cyan)
+2. Heatmap -pretty cool
