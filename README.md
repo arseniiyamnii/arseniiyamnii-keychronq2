@@ -40,3 +40,7 @@ Changes in rgb:
 Effects enablet in correct order:
 1. Solid color(cyan)
 2. Heatmap -pretty cool
+
+Custom effects:
+1. EXAMPLE_CUSTOM_EFFECT1
+2. EXAMPLE_CUSTOM_EFFECT2

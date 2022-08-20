@@ -111,6 +111,9 @@
 #define RGB_MATRIX_STARTUP_HUE 127  // color
 #define RGB_MATRIX_STARTUP_SAT 255 //0-255 0-white 255-color
 #define RGB_MATRIX_STARTUP_VAL 100 //0-200 brightness
+
+//custom effects enable
+#define EXAMPLE_CUSTOM_EFFECT1
 //#define RGB_DISABLE_AFTER_TIMEOUT 300 //seconds
 /* Allow VIA to edit lighting */
 #ifdef VIA_ENABLE
