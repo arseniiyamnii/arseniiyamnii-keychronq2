@@ -6,6 +6,11 @@ Defualt layers:
 4- FN3 = fn2  
 
 
+Installation:
+```
+git clone --recurse-submodules git@github.com:arseniiyamnii/qmk_firmware.git
+```
+
 QMK commands best practies:  
 ```
 qmk config compile.keyboard=keychron/q2/rev_0110 compile.keymap=arseniiyamnii-keychronq2
