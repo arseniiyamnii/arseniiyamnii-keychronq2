@@ -28,6 +28,7 @@ fn2+ del/home   | brighthess up/down1   | brightnes
 fn2+ ins        | f20                   | mic
 power on+ esc   | reset                 | enter bootloader
 fn1+home        | end                   | end
+fn2+LCtl       | enter bootloader      | enter bootloader without poweroff
 
 Changes in rgb:
 * turned Off all effects, except solid color 
