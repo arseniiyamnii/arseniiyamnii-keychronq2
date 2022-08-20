@@ -8,7 +8,8 @@ Defualt layers:
 
 QMK commands best practies:  
 ```
-qmk config flash.keyboard=keychron/q2/rev_0110 flash.keymap=arseniiyamnii-krychronq2
+qmk config compile.keyboard=keychron/q2/rev_0110 compile.keymap=arseniiyamnii-keychronq2
+qmk config flash.keyboard=keychron/q2/rev_0110 flash.keymap=arseniiyamnii-keychronq2
 qmk compile
 qmk flash;while [ $? -ne 0 ]; do qmk flash;done
 ```
