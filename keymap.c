@@ -16,7 +16,6 @@
  */
 
 #include QMK_KEYBOARD_H
-
 enum layers{
     MAC_BASE,
     WIN_BASE,
@@ -93,4 +92,31 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         default:
             return true;  // Process all other keycodes normally
     }
+}
+void rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
+	#include "custom_layer_effects.h"
+        switch (get_highest_layer(layer_state)) {
+            case MAC_BASE:
+#ifdef CAPS_LOCK_INDICATOR_COLOR
+                if (host_keyboard_led_state().caps_lock) {
+                    rgb_matrix_set_color(30, 255, 22, 22); 
+                }
+#endif
+            break;
+            case WIN_BASE:
+#ifdef CAPS_LOCK_INDICATOR_COLOR
+                if (host_keyboard_led_state().caps_lock) {
+                    rgb_matrix_set_color(30, 255, 22, 22); 
+                }
+#endif
+            break;
+	    case _FN1:
+		break;
+	    case _FN2:
+		break;
+            case _FN3:
+                fn3_layer_rgb();
+            break;
+    }
+
 }
