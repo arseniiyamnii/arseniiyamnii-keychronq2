@@ -30,6 +30,8 @@ power on+ esc   | reset                 | enter bootloader
 fn1+home        | end                   | end
 fn2+LCtl        | enter bootloader      | enter bootloader without poweroff
 fn1+<->/<+>     | Lctl+<->/<+>          | For zoom in/out
+fn1+alt/fn2     | Mouse lClick/rClick   | mouse keys
+fn1+Arrows      | Mouse move            | 
 
 Changes in rgb:
 * Default setting - solid color
@@ -37,9 +39,16 @@ Changes in rgb:
 * Default brightness - 100
 * Default saturation - 255(max)
 
+RGB per layer:
+* FN3: different colors for different features
+  * fn row
+  * volume
+  * brightntness
+  * workspaces
+  * Reset button(lCtrl)
+
 Effects enablet in correct order:
 1. Solid color(cyan)
-2. Heatmap -pretty cool
 
 Custom effects:
 1. EXAMPLE_CUSTOM_EFFECT1
