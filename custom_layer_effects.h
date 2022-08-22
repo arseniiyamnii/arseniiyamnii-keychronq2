@@ -1,32 +1,39 @@
 #include "key_numbers.h"
-// pick color from https://www.google.com/search?q=rgb+color+picker
+// pick color from https://www.google.com/search?q=rgb+color+picker HEX
+void set_color_hsv(int key, int h, int s, int v) {
+	HSV hsv = {h,s,v};
+	RGB rgb = hsv_to_rgb(hsv);
+	rgb_matrix_set_color(key, rgb.r, rgb.g, rgb.b);
+}
+
 void fn3_layer_rgb(void) {
+     int v = rgblight_get_val();
      // bootloader
-     rgb_matrix_set_color(KLCTL, 255, 22, 22);
+     set_color_hsv(KLCTL, 200, 255, v);
      //f1-12 row color
-     rgb_matrix_set_color(K1, 85, 81, 207);
-     rgb_matrix_set_color(K2, 85, 81, 207);
-     rgb_matrix_set_color(K3, 85, 81, 207);
-     rgb_matrix_set_color(K4, 85, 81, 207);
-     rgb_matrix_set_color(K5, 85, 81, 207);
-     rgb_matrix_set_color(K6, 85, 81, 207);
-     rgb_matrix_set_color(K7, 85, 81, 207);
-     rgb_matrix_set_color(K8, 85, 81, 207);
-     rgb_matrix_set_color(K9, 85, 81, 207);
-     rgb_matrix_set_color(K0, 85, 81, 207);
-     rgb_matrix_set_color(KMin, 85, 81, 207);
-     rgb_matrix_set_color(KEQ, 85, 81, 207);
+     set_color_hsv(K1, 43, 255, v);
+     set_color_hsv(K2, 43, 255, v);
+     set_color_hsv(K3, 43, 255, v);
+     set_color_hsv(K4, 43, 255, v);
+     set_color_hsv(K5, 43, 255, v);
+     set_color_hsv(K6, 43, 255, v);
+     set_color_hsv(K7, 43, 255, v);
+     set_color_hsv(K8, 43, 255, v);
+     set_color_hsv(K9, 43, 255, v);
+     set_color_hsv(K0, 43, 255, v);
+     set_color_hsv(KMin, 43, 255, v);
+     set_color_hsv(KEQ, 43, 255, v);
      //brightness
-     rgb_matrix_set_color(KDEL, 176, 164, 70);
-     rgb_matrix_set_color(KHOME, 176, 164, 70);
+     set_color_hsv(KDEL, 255, 255, v);
+     set_color_hsv(KHOME, 255, 255, v);
      //workspaces
-     rgb_matrix_set_color(KUP, 219, 2, 2);
-     rgb_matrix_set_color(KDOWN, 219, 2, 2);
+     set_color_hsv(KUP, 255, 255, v);
+     set_color_hsv(KDOWN, 255, 255, v);
      //volume
-     rgb_matrix_set_color(KLEFT, 209, 219, 2);
-     rgb_matrix_set_color(KRIGHT, 209, 219, 2);
+     set_color_hsv(KLEFT, 255, 255, v);
+     set_color_hsv(KRIGHT, 255, 255, v);
      //microphone
-     rgb_matrix_set_color(KINS, 209, 219, 2);
+     set_color_hsv(KINS, 255, 255, v);
 }
 
 //void fn2_layer_rgb(void) {

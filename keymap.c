@@ -95,20 +95,20 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 void rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
 	#include "custom_layer_effects.h"
+                if (host_keyboard_led_state().caps_lock) {
+                    rgb_matrix_set_color(30, 255, 22, 22); 
+                }
         switch (get_highest_layer(layer_state)) {
             case MAC_BASE:
-#ifdef CAPS_LOCK_INDICATOR_COLOR
-                if (host_keyboard_led_state().caps_lock) {
-                    rgb_matrix_set_color(30, 255, 22, 22); 
-                }
-#endif
+/*#ifdef CAPS_LOCK_INDICATOR_COLOR*/
+/*#endif*/
             break;
             case WIN_BASE:
-#ifdef CAPS_LOCK_INDICATOR_COLOR
-                if (host_keyboard_led_state().caps_lock) {
-                    rgb_matrix_set_color(30, 255, 22, 22); 
-                }
-#endif
+/*#ifdef CAPS_LOCK_INDICATOR_COLOR*/
+                /*if (host_keyboard_led_state().caps_lock) {*/
+                    /*rgb_matrix_set_color(30, 255, 22, 22); */
+                /*}*/
+/*#endif*/
             break;
 	    case _FN1:
 		break;
